@@ -7,14 +7,32 @@ public class Program
     {
         using var context = new TestdbContext();
 
-        var tools = context.Tools
-                            .Include(t => t.Brand)
-                            .Include(t => t.Category)
-                            .ToList();
+        // Simple query to test the database
+        // var tools = context.Tools
+        //                     .Include(t => t.Brand)
+        //                     .Include(t => t.Category)
+        //                     .ToList();
 
-        foreach (var t in tools)
+        // foreach (var t in tools)
+        // {
+        //     Console.WriteLine($"Id: {t.Id} - Name: {t.Name} - Brand: {t.Brand?.Name} - Category: {t.Category?.Name}");
+        // }
+
+        // Stored Procedure
+        // DELIMITER //
+        // CREATE PROCEDURE sp_getRTools()
+        // BEGIN
+        // SELECT * FROM Tools
+        // WHERE Name Like "%R";
+        // END //
+        var toolsThatEndWithR = context.Tools
+            .FromSql($"CALL sp_getRTools()")
+            .ToList();
+
+        foreach (var t in toolsThatEndWithR)
         {
-            Console.WriteLine($"Id: {t.Id} - Name: {t.Name} - Brand: {t.Brand?.Name} - Category: {t.Category?.Name}");
+            Console.WriteLine($"Id: {t.Id} - Name: {t.Name}");
         }
+
     }
 }
