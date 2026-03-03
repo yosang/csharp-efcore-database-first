@@ -18,7 +18,7 @@ public class Program
         //     Console.WriteLine($"Id: {t.Id} - Name: {t.Name} - Brand: {t.Brand?.Name} - Category: {t.Category?.Name}");
         // }
 
-        // Stored Procedure
+        // Stored Procedure - Get tools that end with an r
         // DELIMITER //
         // CREATE PROCEDURE sp_getRTools()
         // BEGIN
@@ -34,5 +34,6 @@ public class Program
             Console.WriteLine($"Id: {t.Id} - Name: {t.Name}");
         }
 
+        // Stored procedure - Add a new brand
     }
 }
