@@ -1,5 +1,5 @@
 # Project
-This is a follow up test project based on my [code-first](https://github.com/yosang/csharp-efcore-code-first) example where we "ideally" implement the database first, then bring it into code with Entity Framework Core.
+This is a follow up test project based on my [code-first](https://github.com/yosang/csharp-efcore-code-first) example where we reverse engineer an existing database and bring it into code with Entity Framework Core.
 
 Here we are scaffolding our existing database, migrated by the `code-first` example.
 
