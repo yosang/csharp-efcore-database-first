@@ -3,7 +3,10 @@ This is a follow up test project based on my [code-first](https://github.com/yos
 
 Here we are scaffolding our existing database, migrated by the `code-first` example.
 
-The command used: `dotnet ef dbcontext scaffold "server=localhost;database=testdb;user=testuser;password=p@ssword" MySql.EntityFrameworkCore -o Models --table Brands --table Categories --table Tools`
+The command used: 
+```bash
+dotnet ef dbcontext scaffold "server=localhost;database=testdb;user=testuser;password=p@ssword" MySql.EntityFrameworkCore -o Models --table Brands --table Categories --table Tools
+```
 
 To use this command the following packages were added:
 - Mirosoft.EntityFrameworkCore.Design
