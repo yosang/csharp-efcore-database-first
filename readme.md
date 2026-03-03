@@ -11,3 +11,12 @@ dotnet ef dbcontext scaffold "server=localhost;database=testdb;user=testuser;pas
 To use this command the following packages were added:
 - Mirosoft.EntityFrameworkCore.Design
 - MySQL.EntityFrameworkCore
+
+# Usage
+1. Clone the repo
+2. Since this application is a scaffold of an existing database, the original database schema is required.
+    - You can implement the database using the [code-first](https://github.com/yosang/csharp-efcore-code-first) example.
+3. Run the application with `dotnet run`
+
+# Author
+[Yosmel Chiang](https://github.com/yosang)
