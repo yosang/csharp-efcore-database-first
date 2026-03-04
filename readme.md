@@ -1,3 +1,21 @@
+- [Project](#project)
+- [Concepts covered](#concepts-covered)
+  - [Overview](#overview)
+  - [Stored Procedures](#stored-procedures)
+    - [Querying data:](#querying-data)
+    - [Inserting, adding, deleting data:](#inserting-adding-deleting-data)
+    - [Other methods](#other-methods)
+  - [Basic Stored Procedure syntax](#basic-stored-procedure-syntax)
+    - [Create a parameterless procedure](#create-a-parameterless-procedure)
+    - [Create a parameterised procedure](#create-a-parameterised-procedure)
+    - [Dropping a stored procedure](#dropping-a-stored-procedure)
+    - [List stored procedures](#list-stored-procedures)
+  - [Eager Loading](#eager-loading)
+  - [Lazy Loading](#lazy-loading)
+  - [Explicit Loading](#explicit-loading)
+- [Usage](#usage)
+- [Author](#author)
+
 # Project
 This is a follow up test project based on my [code-first](https://github.com/yosang/csharp-efcore-code-first) example where we reverse engineer an existing database and bring it into code with Entity Framework Core.
 
