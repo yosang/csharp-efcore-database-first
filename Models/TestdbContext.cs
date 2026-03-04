@@ -22,7 +22,7 @@ public partial class TestdbContext : DbContext
     public virtual DbSet<Tool> Tools { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseMySQL("server=localhost;database=testdb;user=testuser;password=p@ssword");
+        => optionsBuilder.UseMySQL("server=localhost;database=testdb;user=testuser;password=p@ssword").UseLazyLoadingProxies();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
